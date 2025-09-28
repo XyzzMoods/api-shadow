@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Api Shadow Exe</title>
+        <meta name="description" content="if only the world knew how i feel">
+        <meta name="keywords" content="if only the world knew how i feel">
+        <meta property="og:title" content="raldz" />
+        <meta property="og:description" content="if only the world knew how i feel" />
+        <meta property="og:url" content="https://api-shadow.vercel.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://pomf2.lain.la/f/1hoflq23.jpg" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                background-color: #000;
+                color: #fff;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+            }
+            
+            .profile-card {
+                width: 100%;
+                max-width: 350px;
+                background: #000;
+                border-radius: 12px;
+                overflow: hidden;
+                position: relative;
+                margin-top: 20px;
+            }
+            
+            .profile-info {
+                text-align: center;
+                padding: 0 20px 15px; 
+            }
+            
+            .avatar-container {
+                display: inline-block;
+                border-radius: 50%;
+                padding: 3px; 
+                background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+                margin-bottom: 12px; 
+            }
+            
+            .avatar {
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #000; 
+                display: block;
+            }
+            
+            .profile-name {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 6px; 
+            }
+            
+            .name {
+                font-size: 1.4rem; 
+                font-weight: 600;
+                margin-right: 6px;
+            }
+            
+            .verified-badge {
+                color: #0095f6;
+                font-size: 1rem; 
+            }
+            
+            .profile-bio {
+                color: #aaa;
+                font-size: 0.85rem; 
+                margin-bottom: 15px; 
+                line-height: 1.4;
+            }
+            
+            .links-section {
+                padding: 0 20px 12px; 
+            }
+            
+            .link-item {
+                display: block;
+                background: #121212;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 16px; 
+                border-radius: 6px; 
+                margin-bottom: 10px; 
+                text-align: center;
+                transition: all 0.3s ease;
+                border: 1px solid #333;
+                font-size: 0.9rem; 
+            }
+            
+            .link-item:hover {
+                background: #1a1a1a;
+                transform: translateY(-2px);
+                border-color: #1DB954;
+            }
+            
+            .link-icon {
+                margin-right: 6px;
+                width: 14px; 
+                text-align: center;
+                font-size: 0.9rem;
+            }
+            
+            .spotify-section {
+                padding: 0 20px 20px; 
+            }
+            
+            .spotify-embed {
+                width: 100%;
+                height: 180px; 
+                border: none;
+                border-radius: 10px; 
+                background: #000;
+                margin-bottom: 15px; 
+            }
+            
+            .lyric {
+                text-align: center;
+                color: #666;
+                font-style: italic;
+                font-size: 0.85rem; 
+                margin-top: 15px; 
+                padding: 15px 12px 0; 
+                line-height: 1.5; 
+                border-top: 1px solid #222;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="profile-card">
+            <div class="profile-info">
+                <div class="avatar-container">
+                    <img src="https://pomf2.lain.la/f/1hoflq23.jpg" alt="Profile" class="avatar">
+                </div>
+                
+                <div class="profile-name">
+                    <h1 class="name">Api Shadow Exe</h1>
+                    <span class="verified-badge">
+                        <i class="fas fa-check-circle"></i>
+                    </span>
+                </div>
+                
+                <p class="profile-bio">This is a shadow exe api made by xyzzmoods.</p>
+            </div>
+            
+            <div class="links-section">
+                <a href="https://t.me/XyzzMoodss" class="link-item">
+                    <i class="fab fa-telegram link-icon"></i> Telegram
+                </a>
+                <a href="https://whatsapp.com/channel/0029VbAonO2GE56qy9FyUE2t" class="link-item">
+                    <i class="fab fa-whatsapp link-icon"></i> WhatsApp Channel
+                </a>
+                <a href="https://tiktok.com/@xyzzmoods" class="link-item">
+                  <i class="fab fa-tiktok link-icon"></i> TikTok
+                </a>
+            </div>
+            
+            <div class="spotify-section">
+                <iframe class="spotify-embed" src="https://open.spotify.com/embed/playlist/2ZdAbrVbOnTy8dJALpMuEU?si=71MDu4C5SBGc0lj4pFJPUA" 
+                        frameborder="0" 
+                        allowtransparency="true" 
+                        allow="encrypted-media">
+                </iframe>
+                
+                <p class="lyric">Api Shadow Exe.</p>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const elements = document.querySelectorAll('.profile-info, .links-section, .spotify-section');
+                
+                elements.forEach((element, index) => {
+                    element.style.opacity = '0';
+                    element.style.transform = 'translateY(15px)';
+                    element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    
+                    setTimeout(() => {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }, 150 + (index * 150));
+                });
+            });
+        </script>
+    </body>
+</html>
