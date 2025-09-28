@@ -1,0 +1,13 @@
+{
+  "name": "Api Shadow Exe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ytdl-core": "^4.11.5",
+    "yt-search": "^2.11.1"
+  }
+}
